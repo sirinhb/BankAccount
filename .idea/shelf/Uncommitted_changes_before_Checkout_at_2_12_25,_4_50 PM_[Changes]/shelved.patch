@@ -1,0 +1,50 @@
+Index: SavingsAccount.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class SavingsAccount:\n    def __init__(self, savingsAccountBalance, interest):\n        self.savingsAccountBalance = savingsAccountBalance\n        self.interest = interest\n\n    def applyInterest(self):\n        savingsAccountBalance = self.savingsAccountBalance * self.interest\n        print(f'Savings Account Balance: {savingsAccountBalance} Amount of Interest: {savingsAccountBalance * self.interest}')\n        return savingsAccountBalance\n
+===================================================================
+diff --git a/SavingsAccount.py b/SavingsAccount.py
+--- a/SavingsAccount.py	(revision ad1fd0a6a41deb7480b154b373853c6518afc1c3)
++++ b/SavingsAccount.py	(date 1739397028625)
+@@ -1,3 +1,4 @@
++
+ class SavingsAccount:
+     def __init__(self, savingsAccountBalance, interest):
+         self.savingsAccountBalance = savingsAccountBalance
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"45568b53-4d79-4fec-ab03-0181269fb5f9\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2sxIYXD7XuZWwAXmmNW3FjY4ZXu\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220\" />\n        <option value=\"bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"45568b53-4d79-4fec-ab03-0181269fb5f9\" name=\"Changes\" comment=\"\" />\n      <created>1739390846715</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1739390846715</updated>\n      <workItem from=\"1739390847897\" duration=\"3284000\" />\n      <workItem from=\"1739396463534\" duration=\"142000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ad1fd0a6a41deb7480b154b373853c6518afc1c3)
++++ b/.idea/workspace.xml	(date 1739396946799)
+@@ -18,6 +18,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="feature-branch" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectColorInfo">{
+@@ -32,7 +37,7 @@
+   "keyToString": {
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "main",
++    "git-widget-placeholder": "averybranch",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -59,6 +64,7 @@
+       <updated>1739390846715</updated>
+       <workItem from="1739390847897" duration="3284000" />
+       <workItem from="1739396463534" duration="142000" />
++      <workItem from="1739396614885" duration="332000" />
+     </task>
+     <servers />
+   </component>
