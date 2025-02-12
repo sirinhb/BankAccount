@@ -1,9 +1,11 @@
+from BankAccount import BankAccount
 class SavingsAccount:
-    def __init__(self, savingsAccountBalance, interest):
+    def __init__(self, name, savingsAccountBalance, interest):
+        self.name = name
         self.savingsAccountBalance = savingsAccountBalance
         self.interest = interest
 
     def applyInterest(self):
-        savingsAccountBalance = self.savingsAccountBalance * self.interest
+        savingsAccountBalance = self.savingsAccountBalance * (self.interest / 100)
         print(f'Savings Account Balance: {savingsAccountBalance} Amount of Interest: {savingsAccountBalance * self.interest}')
         return savingsAccountBalance
