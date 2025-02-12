@@ -6,7 +6,8 @@ class CheckingAccount(BankAccount):
         self.transfer_limit = transfer_limit
 
     def transfer(self, amount):
-        if amount < self.transfer_limit:
-            self.current_balance-=amount
+        if amount <= self.transfer_limit and self.current_balance - amount >= self.minimum_balance:
+            self.current_balance -= amount
+            print(f"Transfer successful! New balance: {self.current_balance}")
         else:
-            print('The amount you entered is too high')
+            print("Transfer amount exceeds the limit or insufficient funds.")

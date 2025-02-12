@@ -23,12 +23,12 @@ class BankAccount:
                 f"Current Balance: {self.current_balance} \n"
                 f"Minimum Balance: {self.minimum_balance} \n")
 
-c1= BankAccount("Sirin", 5000, 1000)
-c1.deposit(5000)
-c1.withdraw(1000)
-print(c1)
-
-c2= BankAccount("Omar", 1000, 3000)
-c2.deposit(1000)
-c2.withdraw(1000)
-print(c2)
+# c1= BankAccount("Sirin", 5000, 1000)
+# c1.deposit(5000)
+# c1.withdraw(1000)
+# print(c1)
+#
+# c2= BankAccount("Omar", 1000, 3000)
+# c2.deposit(1000)
+# c2.withdraw(1000)
+# print(c2)

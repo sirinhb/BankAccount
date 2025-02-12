@@ -20,3 +20,4 @@ sirinSavings.applyInterest()
 sirinChecking.transfer(1000)
 sirinChecking.transfer(500)
 sirinSavings.applyInterest()
+
