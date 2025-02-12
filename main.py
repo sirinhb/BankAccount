@@ -7,7 +7,7 @@ sirinSavings= SavingsAccount("Sirin Blan", 5000, 2.0)
 
 # Checking Account instances
 averyChecking = CheckingAccount("Avery Wood", 1600, 1000, 500)
-sirinChecking = CheckingAccount("Sirin Blan", 2000, 500, 1234, 5678)
+sirinChecking = CheckingAccount("Sirin Blan", 2000, 500,1234, 5678, 1000)
 
 # Avery Instances
 averySavings.applyInterest()
