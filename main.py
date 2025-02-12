@@ -5,7 +5,7 @@ from CheckingAccount import CheckingAccount
 averySavings = SavingsAccount("Avery Wood", 1500, 1.5)
 
 # Checking Account instances
-averyChecking = CheckingAccount("Avery Wood", 1600, 1000, 500)
+averyChecking = CheckingAccount("Avery Wood", 1600, 1000, 1656, 6453, 500)
 
 
 # Avery Instances
